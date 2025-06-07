@@ -17,3 +17,7 @@ resource "aws_security_group" "allow_all" {
         ipv6_cidr_blocks = ["::/0"]
     }
 
+    tags = {
+        Name = "allow-all"
+    }
+}
