@@ -24,14 +24,14 @@ variable "sg_description" {
   default = "allowing all ports from internet"
 }
 
-# variable "from_port" {
-#   default = 0
-# }
+variable "from_port" {
+  default = 0
+}
 
-# variable "to_port" {
-#   type = number
-#   default = 0
-# }
+variable "to_port" {
+  type = number
+  default = 0
+}
 
 # variable "cidr_blocks" {
 #   type = list(string)
