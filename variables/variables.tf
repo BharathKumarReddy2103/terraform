@@ -33,13 +33,13 @@ variable "to_port" {
   default = 0
 }
 
-variable "cidr_blocks" {
-  type = list(string)
-  default = ["0.0.0.0/0"]
-}
+# variable "cidr_blocks" {
+#   type = list(string)
+#   default = ["0.0.0.0/0"]
+# }
 
-variable "sg_tags" {
-  default = {
-      Name = "allow-all"
-  }
-}
+# variable "sg_tags" {
+#   default = {
+#       Name = "allow-all"
+#   }
+# }
