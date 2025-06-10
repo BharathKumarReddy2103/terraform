@@ -20,9 +20,9 @@ variable "sg_name" {
   default = "vars-file-allow-all-roboshop"
 }
 
-# variable "sg_description" {
-#   default = "allowing all ports from internet"
-# }
+variable "sg_description" {
+  default = "allowing all ports from internet"
+}
 
 # variable "from_port" {
 #   default = 0
