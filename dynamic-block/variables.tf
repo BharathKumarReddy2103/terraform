@@ -44,19 +44,19 @@ variable "sg_tags" {
   }
 }
 
-# variable "ingress_ports" {
-#   default = [ # list(map)
-#     {
-#       from_port = 22
-#       to_port   = 22
-#     },
-#     {
-#       from_port = 80
-#       to_port   = 80
-#     },
-#     {
-#       from_port = 8080
-#       to_port   = 8080
-#     }
-#   ]
-# }
+variable "ingress_ports" {
+  default = [ # list(map)
+    {
+      from_port = 22
+      to_port   = 22
+    },
+    {
+      from_port = 80
+      to_port   = 80
+    },
+    {
+      from_port = 8080
+      to_port   = 8080
+    }
+  ]
+}
