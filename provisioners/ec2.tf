@@ -27,7 +27,7 @@ resource "aws_instance" "roboshop" {
 #       "sudo dnf install nginx -y",
 #       "sudo systemctl start nginx",
 #     ]
-#   }
+}
 
 #   provisioner "remote-exec" {
 #     when = destroy
