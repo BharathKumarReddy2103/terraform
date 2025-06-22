@@ -40,7 +40,7 @@ variable "cidr_blocks" {
 
 variable "sg_tags" {
     default = {
-        Name = "allow-all"
+        Name = "allow-all-roboshop"
     }
 }
 
