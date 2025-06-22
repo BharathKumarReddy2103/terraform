@@ -49,7 +49,7 @@ variable "environment" {
 }
 
 variable "instances" {
-    default = ["mongodb", "redis", "mysql", "rabbitmq"]
+    default = ["mongodb-1", "redis-1", "mysql-1", "rabbitmq-1"]
 }
 
 variable "zone_id" {
