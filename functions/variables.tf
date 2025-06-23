@@ -60,9 +60,9 @@ variable "domain_name" {
     default = "daws84s.site"
 }
 
-variable "common_tags"{
-    default = {
-        Project = "roboshop"
-        Terraform = "true"
-    }
-}
+# variable "common_tags"{
+#     default = {
+#         Project = "roboshop"
+#         Terraform = "true"
+#     }
+# }
