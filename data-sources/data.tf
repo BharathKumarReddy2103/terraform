@@ -19,5 +19,5 @@ data "aws_ami" "bharathdevops" {
 }
 
 output "ami_id" {
-  value       = data.aws_ami.devops.id
+  value       = data.aws_ami.bharathdevops.id
 }
