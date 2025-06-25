@@ -9,6 +9,7 @@ resource "aws_instance" "roboshop" {
     command = "${self.private_ip} > inventory"
     on_failure = continue #ignoring errors
   }
+}
 
 #   provisioner "local-exec" {
 #     command = "echo 'instance is destroyed'"
