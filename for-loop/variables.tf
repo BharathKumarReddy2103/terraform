@@ -55,7 +55,6 @@ variable "instances" {
         mysql-1 = "t3.small"
         rabbitmq-1 = "t3.micro"
     }
-    default = ["mongodb-1", "redis-1", "mysql-1", "rabbitmq-1"]
 }
 
 variable "zone_id" {
