@@ -54,9 +54,9 @@ variable "environment" {
     default = "prod"
 }
 
-variable "instances" {
-    default = ["mongodb-1", "redis-1", "mysql-1", "rabbitmq-1"]
-}
+# variable "instances" {
+#     default = ["mongodb-1", "redis-1", "mysql-1", "rabbitmq-1"]
+# }
 
 variable "zone_id" {
     default = "Z09266885JREMC64NO1J"
