@@ -10,7 +10,7 @@ resource "aws_instance" "roboshop" {
 }
 
 resource "aws_security_group" "allow_all" {
-    name        = "allow_all-roboshop"
+    name        = "allow_all-roboshop-sg"
     description = "allow all traffic"
 
     ingress {
