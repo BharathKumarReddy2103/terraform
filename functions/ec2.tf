@@ -35,7 +35,7 @@ resource "aws_security_group" "allow_all" {
     tags = merge(
       var.common_tags,
       {
-        Name = "allow-all"
+        Name = "allow-all-roboshop"
       }
     )
 }   
