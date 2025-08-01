@@ -7,7 +7,7 @@ resource "aws_instance" "roboshop" {
 
   provisioner "local-exec" {
     command = "${self.private_ip} > inventory"
-    on_failure = continue #ignoring errors
+    # on_failure = continue #ignoring errors
   }
 
   provisioner "local-exec" {
