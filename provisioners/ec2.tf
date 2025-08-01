@@ -3,6 +3,7 @@ resource "aws_instance" "roboshop" {
   instance_type = var.instance_type
   subnet_id     = var.subnet_id
   vpc_security_group_ids = [ aws_security_group.allow_all.id ]
+  associate_public_ip_address = true
   
   tags = var.ec2_tags
 
