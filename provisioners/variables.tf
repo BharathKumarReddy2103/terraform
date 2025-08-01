@@ -4,6 +4,11 @@ variable "ami_id" {
   description = "AMI ID of bharathdevops RHEL9"
 }
 
+variable "subnet_id" {
+  type        = string
+  default = "subnet-027e9b95abbffe496"
+  description = "subnet ID of bharath RHEL9"
+}
 variable "instance_type" {
   default = "t3.micro"
 }
