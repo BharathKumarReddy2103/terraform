@@ -1,6 +1,6 @@
 variable "ami_id" {
   type        = string
-  default     = "ami-09c813fb71547fc4f"
+  default     = "ami-0220d79f3f480ecf5"
   description = "AMI ID of bharathdevops RHEL9"
 }
 
@@ -55,13 +55,13 @@ variable "environment" {
 }
 
 variable "instances" {
-    # default = {
-    #     mongodb-1 = "t3.micro" # each keyword is assigned for every iteration. you will get each.key and each.value
-    #     redis-1 = "t3.micro"
-    #     mysql-1 = "t3.small"
-    #     rabbitmq-1 = "t3.micro"
-    # }
-    default = ["mongodb-1", "redis-1", "mysql-1", "rabbitmq-1"]
+    default = {
+        mongodb-roboshop = "t3.micro" # each keyword is assigned for every iteration. you will get each.key and each.value
+        redis-roboshop = "t3.micro"
+        mysql-roboshop = "t3.small"
+        rabbitmq-roboshop = "t3.micro"
+    }
+    # default = ["mongodb-roboshop", "redis-roboshop", "mysql-roboshop", "rabbitmq-roboshop"]
 }
 
 variable "zone_id" {
