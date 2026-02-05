@@ -1,6 +1,6 @@
 variable "ami_id" {
   type        = string
-  default = "ami-09c813fb71547fc4f"
+  default = "ami-0220d79f3f480ecf5"
   description = "AMI ID of bharath RHEL9"
 }
 
@@ -17,7 +17,7 @@ variable "instance_type" {
 variable "ec2_tags" {
   type = map(string)
   default = {
-      Name = "HelloWorld"
+      Name = "HelloRoboshop"
       Purpose = "variables-demo"
   }
 }
@@ -51,5 +51,5 @@ variable "sg_tags" {
 }
 
 variable "environment" {
-    default = "prod"
+    default = "dev"
 }
