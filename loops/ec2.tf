@@ -1,5 +1,5 @@
 resource "aws_instance" "roboshop" {
-  count = 4
+  count = 5
   ami           = var.ami_id # left and right side names no need to be same
   instance_type = var.environment == "dev" ? "t3.micro" : "t3.small"
   subnet_id     = var.subnet_id

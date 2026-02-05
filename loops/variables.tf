@@ -1,6 +1,6 @@
 variable "ami_id" {
   type        = string
-  default     = "ami-09c813fb71547fc4f"
+  default     = "ami-0220d79f3f480ecf5"
   description = "AMI ID of bharathdevops RHEL9"
 }
 
@@ -55,7 +55,7 @@ variable "environment" {
 }
 
 variable "instances" {
-    default = ["mongodb-1", "redis-1", "mysql-1", "rabbitmq-1"]
+    default = ["mongodb-roboshop", "redis-roboshop", "mysql-roboshop", "rabbitmq-roboshop", "frontend-roboshop"]
 }
 
 variable "zone_id" {
