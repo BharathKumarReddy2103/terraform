@@ -1,4 +1,4 @@
-output "fina_name" {
+output "final_name" {
     value = local.fina_name
 }
 
