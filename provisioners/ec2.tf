@@ -12,10 +12,10 @@ resource "aws_instance" "roboshop" {
     on_failure = continue #ignoring errors
   }
 
-#   provisioner "local-exec" {
-#     command = "echo 'instance is destroyed'"
-#     when = destroy
-#   }
+  provisioner "local-exec" {
+    command = "echo 'instance is destroyed'"
+    when = destroy
+  }
 
 #   connection {
 #     type     = "ssh"
