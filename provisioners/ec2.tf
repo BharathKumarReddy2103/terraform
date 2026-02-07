@@ -37,7 +37,7 @@ resource "aws_instance" "roboshop" {
 #       "sudo systemctl stop nginx"
 #     ]
 #   }
-# }
+}
 
 resource "aws_security_group" "allow_all" {
     name        = var.sg_name
