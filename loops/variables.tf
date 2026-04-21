@@ -17,7 +17,7 @@ variable "instance_type" {
 variable "ec2_tags" {
     type = map(string)
     default = {
-        Name = "Roboshop"
+        Name = "Roboshop-1"
         Purpose = "variables-demo"
     }
 }
@@ -55,7 +55,7 @@ variable "environment" {
 }
 
 variable "instances" {
-    default = ["mongodb-roboshop", "redis-roboshop", "mysql-roboshop", "rabbitmq-roboshop", "frontend-roboshop"]
+    default = ["mongodb-roboshop", "redis-roboshop", "mysql-roboshop", "rabbitmq-roboshop"]
 }
 
 variable "zone_id" {
