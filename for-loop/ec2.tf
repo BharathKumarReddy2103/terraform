@@ -2,7 +2,7 @@
   for_each = var.instances
   # for_each = toset(var.instances)
   ami           = var.ami_id # left and right side names no need to be same
-  instance_type = "each.value" # each.value will give you the value of each keyword. you can also use each.key to get the keyword name
+  instance_type = each.value # each.value will give you the value of each keyword. you can also use each.key to get the keyword name
   # instance_type = each.key
   subnet_id     = var.subnet_id
   vpc_security_group_ids = [ aws_security_group.allow_all.id ]

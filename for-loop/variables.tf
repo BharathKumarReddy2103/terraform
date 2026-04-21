@@ -61,7 +61,7 @@ variable "instances" {
         mysql-roboshop = "t3.small"
         rabbitmq-roboshop = "t3.micro"
     }
-    default = ["mongodb-roboshop", "redis-roboshop", "mysql-roboshop", "rabbitmq-roboshop"]
+    # default = ["mongodb-roboshop", "redis-roboshop", "mysql-roboshop", "rabbitmq-roboshop"]
 }
 
 variable "zone_id" {
