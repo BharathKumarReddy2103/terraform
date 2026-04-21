@@ -55,13 +55,13 @@ variable "environment" {
 }
 
 variable "instances" {
-    default = {
-        mongodb-roboshop = "t3.micro" # each keyword is assigned for every iteration. you will get each.key and each.value
-        redis-roboshop = "t3.micro"
-        mysql-roboshop = "t3.small"
-        rabbitmq-roboshop = "t3.micro"
-    }
-    # default = ["mongodb-roboshop", "redis-roboshop", "mysql-roboshop", "rabbitmq-roboshop"]
+    # default = {
+    #     mongodb-roboshop = "t3.micro" # each keyword is assigned for every iteration. you will get each.key and each.value
+    #     redis-roboshop = "t3.micro"
+    #     mysql-roboshop = "t3.small"
+    #     rabbitmq-roboshop = "t3.micro"
+    # }
+    default = ["mongodb-roboshop", "redis-roboshop", "mysql-roboshop", "rabbitmq-roboshop"]
 }
 
 variable "zone_id" {
