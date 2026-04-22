@@ -23,7 +23,7 @@ variable "ec2_tags" {
 }
 
 variable "sg_name" {
-    default = "roboshop-sg"
+    default = "roboshop"
 }
 
 variable "sg_description" {
