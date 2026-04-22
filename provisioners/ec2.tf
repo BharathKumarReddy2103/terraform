@@ -8,14 +8,14 @@ resource "aws_instance" "roboshop" {
   tags = var.ec2_tags
 
   provisioner "local-exec" {
-    command = "echo ${self.private_ip} > inventory"
+    command = "${self.private_ip} > inventory"
     on_failure = continue #ignoring errors
   }
 
-#   provisioner "local-exec" {
-#     command = "echo 'instance is destroyed'"
-#     when = destroy
-#   }
+  provisioner "local-exec" {
+    command = "echo 'instance is destroyed'"
+    when = destroy
+  }
 
 #   connection {
 #     type     = "ssh"
