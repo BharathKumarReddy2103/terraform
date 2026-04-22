@@ -8,6 +8,12 @@ variable "instance_type" {
   default = "t3.micro"
 }
 
+variable "subnet_id" {
+  type        = string
+  default = "subnet-027e9b95abbffe496"
+  description = "subnet ID of bharath RHEL9"
+}
+
 variable "ec2_tags" {
     type = map(string)
     default = {
