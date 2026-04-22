@@ -17,7 +17,7 @@ variable "ec2_tags" {
 }
 
 variable "sg_name" {
-  default = "allow-all"
+  default = "allow-all-roboshop"
 }
 
 variable "sg_description" {
