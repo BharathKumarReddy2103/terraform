@@ -10,9 +10,9 @@ terraform {
     bucket = "bharath-remote-state"
     key    = "remote-state-demo"
     region = "us-east-1"
-    dynamodb_table = "bharath-remote-state"
-    # encrypt        = true
-    # use_lockfile = true
+    # dynamodb_table = "bharath-remote-state"
+    encrypt        = true
+    use_lockfile = true
   }
 }
 
