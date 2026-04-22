@@ -8,10 +8,16 @@ variable "instance_type" {
   default = "t3.micro"
 }
 
+variable "subnet_id" {
+  type        = string
+  default = "subnet-027e9b95abbffe496"
+  description = "subnet ID of bharath RHEL9"
+}
+
 variable "ec2_tags" {
   type = map(string)
   default = {
-    Name    = "HelloWorld"
+    Name    = "Roboshop"
     Purpose = "variables-demo"
   }
 }
@@ -49,14 +55,17 @@ variable "ingress_ports" {
     {
       from_port = 22
       to_port   = 22
+      protocol  = "tcp"
     },
     {
       from_port = 80
       to_port   = 80
+      protocol  = "tcp"
     },
     {
       from_port = 8080
       to_port   = 8080
+      protocol  = "tcp"
     }
   ]
 }
