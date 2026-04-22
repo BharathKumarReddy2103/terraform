@@ -17,13 +17,13 @@ variable "instance_type" {
 variable "ec2_tags" {
     type = map(string)
     default = {
-        Name = "HelloWorld"
+        Name = "roboshop"
         Purpose = "variables-demo"
     }
 }
 
 variable "sg_name" {
-    default = "allow-all-roboshop"
+    default = "roboshop-sg"
 }
 
 variable "sg_description" {
