@@ -65,9 +65,9 @@ variable "instances" {
 }
 
 variable "zone_id" {
-    default = "Z09266885JREMC64NO1J"
+    default = "Z01312153HNV00B0UTMNI"
 }
 
 variable "domain_name" {
-    default = "bharath2103.site"
+    default = "bharath2103.online"
 }
