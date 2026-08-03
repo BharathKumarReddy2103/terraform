@@ -51,5 +51,5 @@ variable "sg_tags" {
 }
 
 variable "environment" {
-    default = "qa"
+    default = "dev"
 }
