@@ -17,13 +17,13 @@ variable "instance_type" {
 variable "ec2_tags" {
   type = map(string)
   default = {
-      Name = "HelloRoboshop-1"
+      Name = "HelloRoboshop"
       Purpose = "variables-demo"
   }
 }
 
 variable "sg_name" {
-  default = "allow-all-roboshop-1"
+  default = "allow-all-roboshop"
 }
 
 variable "sg_description" {
@@ -46,6 +46,6 @@ variable "cidr_blocks" {
 
 variable "sg_tags" {
   default = {
-      Name = "allow-all-roboshop-1"
+      Name = "allow-all-roboshop"
   }
 }
