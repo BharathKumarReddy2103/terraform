@@ -17,7 +17,7 @@ variable "instance_type" {
 variable "ec2_tags" {
     type = map(string)
     default = {
-        Name = "Roboshop-1"
+        Name = "Roboshop"
         Purpose = "variables-demo"
     }
 }
