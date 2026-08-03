@@ -1,16 +1,16 @@
-resource "aws_instance" "roboshop-1" {
-  ami           = "ami-0220d79f3f480ecf5"
-  instance_type = "t3.micro"
-  subnet_id   = "subnet-027e9b95abbffe496"
-  vpc_security_group_ids = local.sg_id
+# resource "aws_instance" "allow_all" {
+#   ami           = "ami-0220d79f3f480ecf5"
+#   instance_type = "t3.micro"
+#   subnet_id   = "subnet-027e9b95abbffe496"
+#   vpc_security_group_ids = local.sg_id
   
-  tags = {
-    Name = "HelloRoboshop-1"
-  }
-}
+#   tags = {
+#     Name = "HelloRoboshop-1"
+#   }
+# }
 
 resource "aws_security_group" "allow_all" {
-    name        = "allow_all-roboshop"
+    name        = "allow_all"
     description = "allow all traffic"
 
     ingress {
@@ -33,6 +33,6 @@ resource "aws_security_group" "allow_all" {
     }
 
     tags = {
-        Name = "allow-all-roboshop-1"
+        Name = "allow-all"
     }
 }
