@@ -33,6 +33,6 @@ resource "aws_security_group" "allow_all" {
     }
 
     tags = {
-        Name = "allow-all"
+        Name = "allow-all-1"
     }
 }
